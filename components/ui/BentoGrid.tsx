@@ -1,10 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
-
 import { cn } from "@/lib/utils";
 
 
@@ -57,11 +53,8 @@ export const BentoGridItem = ({
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
-  const [isClient, setIsClient] = useState(false); // Ensure we are on the client
 
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
+
 
   const defaultOptions = {
     loop: copied,
@@ -177,21 +170,7 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-               {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
-               {isClient && (
-                  <Lottie
-                    options={{
-                      loop: copied,
-                      autoplay: copied,
-                      animationData: animationData,
-                      rendererSettings: {
-                        preserveAspectRatio: "xMidYMid slice",
-                      },
-                    }}
-                    height={200}
-                    width={400}
-                  />
-                )}
+
               </div>
 
               <MagicButton
