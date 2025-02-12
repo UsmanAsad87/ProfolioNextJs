@@ -7,6 +7,8 @@ import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import RecentProject from "@/components/RecentProject";
+import Clients from "@/components/Clients";
+import Experience from "@/components/Experience";
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
         <Hero />
         <Grid />
         <RecentProject/>
+        <Clients/>
+        <Experience/>
       </div>
     </main>
   );
