@@ -111,7 +111,7 @@ export const projects = [
     link: "/ui.aiimg.com",
   },
   {
-    id:6 ,
+    id: 6,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
@@ -140,9 +140,9 @@ export const testimonials = [
   {
     quote:
       "Usman helped us build a feature-rich web application and Mobile app using flutter, Firebase, NextJs, and Express. His ability to implement real-time data synchronization and optimize server performance was invaluable. His solutions were not just functional but also well-documented and easy to maintain. I highly recommend working with him!",
-      name: "Mohamed Rassoul Tounkara",
-      img: "/testimonals/mohammed.jpeg",
-      title: "Architecte Cloud & DevOps at Osiris Cloud",
+    name: "Mohamed Rassoul Tounkara",
+    img: "/testimonals/mohammed.jpeg",
+    title: "Architecte Cloud & DevOps at Osiris Cloud",
   },
   {
     quote:
@@ -153,7 +153,7 @@ export const testimonials = [
   },
   {
     quote:
-    "Usman was instrumental in bringing Nanoga to life, developing the entire ecosystem from the website and admin panel to fully functional iOS and Android apps. His expertise in Flutter, Node.js, Firebase, and SQL allowed us to build a seamless platform for discovering local businesses and offers in Botswana. From deployment to performance optimization, Usman ensured a smooth experience for both users and business owners. His ability to handle the entire project lifecycle with precision and efficiency was truly remarkable!",
+      "Usman was instrumental in bringing Nanoga to life, developing the entire ecosystem from the website and admin panel to fully functional iOS and Android apps. His expertise in Flutter, Node.js, Firebase, and SQL allowed us to build a seamless platform for discovering local businesses and offers in Botswana. From deployment to performance optimization, Usman ensured a smooth experience for both users and business owners. His ability to handle the entire project lifecycle with precision and efficiency was truly remarkable!",
     name: "Onalenna Mosupiemang",
     img: "/testimonals/onalenna.png",
     title: "Founder of Nanogo BW",
@@ -196,30 +196,61 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Assistant Manager",
+    company: "Nescom, Islamabad",
+    techStack: "C#, .NET Core, MySQL, Vue.js, Dot Net Core MVC, Unity, Node.js, React, ArcGIS",
+    time: "Sep 2023 - Feb 2024",
+    desc: [
+      "Enhanced mission execution accuracy by developing a VR-based GCS, providing immersive training and real-time interaction.",
+      "Improved computational efficiency by 33% by optimizing path planning algorithm, reducing processing time. ",
+      "Increased system reliability and enhanced geospatial analysis by integrating ArcGIS, enabling seamless multi-map loading, and ensuring smooth interoperability with other systems.",
+      "Accelerated system onboarding by 40% by creating web-based user manuals, reducing training time and minimizingsupport queries",
+      "Minimized downtime and boosted readiness by leading end-user training and deployment for seamless adoption"
+    ],
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Software Engineer",
+    company: "DigifyR, Rawalpind",
+    techStack: "Flutter, React, Next.js, Vue.js Node.js, .NET Core, Firebase, PostgreSQL, AWS",
+    time: "Jan 2022 - Sep 2023",
+    desc: [
+      "Built and launched mobile and web applications on Play Store, App Store, and Web, reaching thousands of users.",
+      "Developed and optimized backend systems using Node.js, .NET Core, Firebase, and PostgreSQL for better scalability.",
+      "Designed and implemented REST APIs and WebSockets, ensuring seamless real-time communication across platforms.",
+      "Deployed, monitored, and managed applications on Firebase and Google Cloud, reducing downtime by 40%.",
+      "Led and executed $80K+ worth of projects, including ActivTips, Nanoga BW, and Kanz Ul Huda, driving business growth."
+    ]
+    , className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Treasurer",
+    company: "PIEAS Artificial Intelligence Society",
+    techStack:"Google Sheets, Google Workspace, Eventbrite, Trello, Budgeting, Communication Skills.",
+    time: "Jun 2022 - Feb 2023",
+    desc: [
+      "Managed financial operations and secured resources for AI-related workshops and events.",
+      "Organized and led 'Orient AI' sessions, positively impacting student engagement in AI.",
+      "Expanded society outreach by fostering collaborations and inviting industry experts."
+    ],
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
-  },
+},
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
+    title: "Co-Lead ML",
+    company: "GDSC PIEAS",
+    techStack: "Python, TensorFlow, PyTorch, Scikit-Learn, Pandas, Google Cloud AI, Docker.",
+    time: "Jun 2021 - May 2022",
+    desc: [
+      "Led ML workshops and mentorship sessions, guiding students in hands-on AI projects.",
+      "Developed and deployed ML models using Python, TensorFlow, and Scikit-Learn.",
+      "Organized hackathons and technical sessions on AI, deep learning, and Google Cloud AI."
+    ], className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
 ];
@@ -228,11 +259,11 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link:"https://github.com/UsmanAsad87",
+    link: "https://github.com/UsmanAsad87",
   },
   {
     id: 2,
     img: "/link.svg",
-    link:"https://www.linkedin.com/in/usmanasad87/"
+    link: "https://www.linkedin.com/in/usmanasad87/"
   },
 ];
