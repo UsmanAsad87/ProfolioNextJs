@@ -102,71 +102,94 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
   },
+  {
+    id: 5,
+    title: "AI Image SaaS - Canva Application",
+    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    img: "/p3.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "/ui.aiimg.com",
+  },
+  {
+    id:6 ,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/ui.apple.com",
+  },
 ];
+
+
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Usman played a key role in developing our CargoControl system, handling both mobile and web applications with expertise. His deep knowledge of Flutter, Node.js, Firebase, and SQL helped us create a seamless real-time tracking platform for vessel offloading and rice transportation. His ability to integrate real-time updates and ensure a smooth user experience in Spanish was impressive. A true professional who delivers results!",
+    name: "Francisco López",
+    img: "/testimonals/francisco.png",
+    title: "Project Manager at CargoControl",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Usman improved our Next.js and TypeScript app significantly along with mobile app of kanz ul huda. His API integration skills and optimizations reduced our load times by 40%, making our web app feel incredibly fast. Plus, he provided great documentation, which made future updates easier!",
+    name: "Siam Hafeez",
+    img: "/testimonals/siam.png",
+    title: "CMO At Verge DM",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Usman helped us build a feature-rich web application and Mobile app using flutter, Firebase, NextJs, and Express. His ability to implement real-time data synchronization and optimize server performance was invaluable. His solutions were not just functional but also well-documented and easy to maintain. I highly recommend working with him!",
+      name: "Mohamed Rassoul Tounkara",
+      img: "/testimonals/mohammed.jpeg",
+      title: "Architecte Cloud & DevOps at Osiris Cloud",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Usman expertise in Flutter and Firebase helped us create a cross-platform mobile application that exceeded our expectations. From implementing real-time database synchronization to ensuring seamless push notifications, he handled every aspect with precision. His deep knowledge of state management and UI/UX optimization made our app incredibly smooth and intuitive. His professionalism and technical skills make him a fantastic asset to any team.",
+    name: "LaMario Favron Jr.",
+    img: "/testimonals/mario.jpeg",
+    title: "Snr System Engineer at Indigo IT LLC",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    "Usman was instrumental in bringing Nanoga to life, developing the entire ecosystem from the website and admin panel to fully functional iOS and Android apps. His expertise in Flutter, Node.js, Firebase, and SQL allowed us to build a seamless platform for discovering local businesses and offers in Botswana. From deployment to performance optimization, Usman ensured a smooth experience for both users and business owners. His ability to handle the entire project lifecycle with precision and efficiency was truly remarkable!",
+    name: "Onalenna Mosupiemang",
+    img: "/testimonals/onalenna.png",
+    title: "Founder of Nanogo BW",
   },
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "CargoControl",
+    img: "/clientProj/cc.png",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "OzzieBarber",
+    img: "/clientProj/barber.png",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "ActivTips",
+    img: "/clientProj/activtips.png",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "Opclo",
+    img: "/clientProj/opclo.png",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "Nanoga BW",
+    img: "/clientProj/Nanoga.png",
+  },
+  {
+    id: 6,
+    name: "Koumpa",
+    img: "/clientProj/koumpa.png",
   },
 ];
 
