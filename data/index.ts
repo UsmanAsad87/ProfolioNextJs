@@ -185,7 +185,7 @@ export const companies = [
   {
     id: 5,
     name: "Nanoga BW",
-    img: "/clientProj/Nanoga.png",
+    img: "/clientProj/nanoga.png",
   },
   {
     id: 6,
