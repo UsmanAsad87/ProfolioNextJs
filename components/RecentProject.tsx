@@ -14,14 +14,19 @@ const RecentProject = () => {
                 {projects.map(({ id, title, des, img, link, iconLists }) => (
                     <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[30.5rem] flex items-center
                      justify-center sm:w-[570px] w-[80vw]'>
+                        
                         <PinContainer title={link} href={link}>
-                            <div className='relative flex items-center justify-center  sm:w-[570px] w-[80vw]
+                            {/* <div className='relative flex items-center justify-center  sm:w-[570px] w-[80vw]
                              overflow-hidden h-[30vh] sm:h-[40vh] mb-10'>
                                 <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#12162d]'>
                                     <img src='/bg.png' alt='bg-img' />
                                 </div>
                                 <img src={img} alt={title} className='z-10 absolute  rounded-2xl' />
+                            </div> */}
+                            <div className='flex items-center justify-center w-[80vw] sm:w-[570px] overflow-hidden mb-10'>
+                                <img src={img} alt={title} className='rounded-2xl w-auto h-auto' />
                             </div>
+
                             <h1 className=' mt-5 font-bold lg:text-2xl md:text-xl text-base line-clamp-1' >
                                 {title}
                             </h1>
@@ -31,10 +36,10 @@ const RecentProject = () => {
                             <div className='flex items-center justify-between mt-7 mb-3'>
                                 <div className='flex items-center'>
                                     {iconLists.map((icon, index) => (
-                                        <div key= {index} className='border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex 
+                                        <div key={index} className='border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex 
                                         justify-center items-center'
-                                        style={{transform:`translateX(-${5* index *2}px)`}}>
-                                            <img src={icon} alt={icon} className="p-2"/>
+                                            style={{ transform: `translateX(-${5 * index * 2}px)` }}>
+                                            <img src={icon} alt={icon} className="p-2" />
                                         </div>
                                     ))}
                                 </div>
@@ -42,7 +47,7 @@ const RecentProject = () => {
                                     <p className='flex lg:text-xl md:text-xs text-sm text-purple'>
                                         Link
                                     </p>
-                                    <FaLocationArrow className='ms-3' color = "#CBACF9"/>
+                                    <FaLocationArrow className='ms-3' color="#CBACF9" />
                                 </div>
 
                             </div>
