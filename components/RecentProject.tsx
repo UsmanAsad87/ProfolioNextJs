@@ -20,7 +20,7 @@ const RecentProject = () => {
                                 <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#12162d]'>
                                     <img src='/bg.png' alt='bg-img' />
                                 </div>
-                                <img src={img} alt={title} className='z-10 absolute bottom-0' />
+                                <img src={img} alt={title} className='z-10 absolute  rounded-2xl' />
                             </div>
                             <h1 className=' mt-5 font-bold lg:text-2xl md:text-xl text-base line-clamp-1' >
                                 {title}
@@ -40,7 +40,7 @@ const RecentProject = () => {
                                 </div>
                                 <div className='flex justify-center items-center'>
                                     <p className='flex lg:text-xl md:text-xs text-sm text-purple'>
-                                        Check Site
+                                        Link
                                     </p>
                                     <FaLocationArrow className='ms-3' color = "#CBACF9"/>
                                 </div>
