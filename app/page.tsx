@@ -10,21 +10,25 @@ import RecentProject from "@/components/RecentProject";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
+import SEO from '@/components/ui/3d-pin';
 
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
-        <FloatingNav navItems={navItems} />
-        <Hero />
-        <Grid />
-        <RecentProject/>
-        <Clients/>
-        <Experience/>
-        <Approach/>
-        <Footer/>
-      </div>
-    </main>
+    <>
+      <SEO title="Usman Asad - Digifyr Portfolio" description="Explore the portfolio of Usman Asad, a professional at Digifyr and NESCOM. Discover projects, experience, and more." />
+      <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
+        <div className="max-w-7xl w-full">
+          <FloatingNav navItems={navItems} />
+          <Hero />
+          <Grid />
+          <RecentProject/>
+          <Clients/>
+          <Experience/>
+          <Approach/>
+          <Footer/>
+        </div>
+      </main>
+    </>
   );
 };
 
