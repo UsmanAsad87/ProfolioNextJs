@@ -11,10 +11,14 @@ import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
 import SEO from '@/components/ui/3d-pin';
+import Head from 'next/head';
 
 const Home = () => {
   return (
     <>
+      <Head>
+        <meta name="google-site-verification" content="ggWKJgOz1lENFu8n__fDmACwmEPdtGkYRaUOgDXjpvQ" />
+      </Head>
       <SEO title="Usman Asad - Digifyr Portfolio" description="Explore the portfolio of Usman Asad, a professional at Digifyr and NESCOM. Discover projects, experience, and more." />
       <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
         <div className="max-w-7xl w-full">
