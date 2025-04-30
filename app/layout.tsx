@@ -20,6 +20,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/logo.png" sizes="any" />
+        <meta name="google-site-verification" content="ggWKJgOz1lENFu8n__fDmACwmEPdtGkYRaUOgDXjpvQ" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
@@ -30,7 +31,10 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://4ai.chat/embed.js?siteId=NEFJQ0hBVEtFWTEwNQ==&app=web"></script>
       </body>
+
     </html>
   );
 }
