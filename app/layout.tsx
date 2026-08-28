@@ -7,8 +7,9 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Usman Asad",
-  description: "Full Stack Engineer",
+  title: "Usman Asad | Python & AI Engineer",
+  description:
+    "Senior Python & AI Engineer — FastAPI, LLM systems, PostgreSQL, Kubernetes. Lead Developer at ZeusLock.ai, an AI-native Data Loss Prevention platform.",
 };
 
 export default function RootLayout({

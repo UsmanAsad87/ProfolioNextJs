@@ -6,7 +6,7 @@ import SEO from '@/components/ui/3d-pin';
 const Experience = () => {
     return (
         <>
-            <SEO title="Experience - Usman Asad" description="Explore the professional experience of Usman Asad, including roles at Digifyr and NESCOM." />
+            <SEO title="Experience - Usman Asad" description="Explore the professional experience of Usman Asad, including roles at ZeusLock.ai, Digifyr, Aim Digital, and NESCOM." />
             <div className='py-20' id="work">
                 <h1 className='heading'>
                     My  {" "}

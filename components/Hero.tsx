@@ -1,4 +1,4 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow, FaDownload } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
@@ -37,24 +37,33 @@ const Hero = () => {
       <div className="flex justify-center relative mt-10 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-90">
-           Crafting Intelligent & Scalable Digital Solutions  
+           Python · FastAPI · LLM Engineering · Cloud
           </p>
           <TextGenerateEffect
-            words="Transforming Ideas into Engaging User Experiences"
+            words="Turning Complex Problems into Intelligent Products"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Usman Asad, a software engineer based in Pakistan. I specialize in building captivating digital experiences with clean, modern design and cutting-edge technology.
+            Hi! I&apos;m Usman Asad, a Senior Python &amp; AI Engineer. I build production LLM systems, FastAPI backends, and cloud-native platforms — currently Lead Developer at ZeusLock.ai, an AI-native Data Loss Prevention platform for European enterprises.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <a href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a href="/cv/Usman-Asad-Resume-Python.pdf" download>
+              <MagicButton
+                title="Download Resume"
+                icon={<FaDownload />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
