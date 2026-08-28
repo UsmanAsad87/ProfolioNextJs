@@ -1,8 +1,11 @@
 # Project Image Prompts (for Gemini)
 
-The portfolio needs 3 new project card images (plus 1 optional). Current placeholders are
-copies of `bg.png` — overwrite them at the exact paths below and the site picks them up
-with no code change.
+> **Status:** zeuslock.png, mms.png, and nafapay.png are DONE (added 2026-08-28).
+> Ataya still uses the old ActivTips artwork renamed to `ataya.png` — regenerate it
+> whenever you like (section 4) and overwrite the file; no code change needed.
+
+The portfolio needs project card images. Overwrite them at the exact paths below and the
+site picks them up with no code change.
 
 **How to use:** open Gemini (image generation), attach 2–4 real screenshots of the product
 (dashboard, mobile app, landing page — Gemini will compose them into the artwork), paste the

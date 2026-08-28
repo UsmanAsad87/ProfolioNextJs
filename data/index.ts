@@ -91,7 +91,7 @@ export const projects = [
     id: 3,
     title: "Ataya",
     des: "Leisure booking & matching platform for Senegal — FastAPI + PostgreSQL backend, Next.js web, Flutter apps; Stripe, Wave & Orange Money payments; 10K+ downloads.",
-    img: "/projects/activtips.png",
+    img: "/projects/ataya.png",
     iconLists: ["/python.svg", "/fastapi.svg", "/postgresql.svg", "/next.svg", "/flutter.svg", "/stripe.svg"],
     link: "https://ataya.app",
   },
