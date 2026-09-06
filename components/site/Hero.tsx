@@ -111,7 +111,7 @@ export default function Hero() {
             className="relative z-10 w-full drop-shadow-[0_24px_60px_rgba(0,0,0,.55)]"
           />
           <div className="absolute bottom-5 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-md border border-line bg-[rgba(0,3,25,.8)] px-4 py-2 font-grotesk text-xs font-semibold tracking-wide text-sub backdrop-blur-sm">
-            Rawalpindi, PK · working worldwide · UTC+5
+            Islamabad, PK · working worldwide · UTC+5
           </div>
         </motion.div>
       </div>
