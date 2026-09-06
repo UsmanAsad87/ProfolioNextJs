@@ -18,6 +18,11 @@ const config = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+      grotesk: ["var(--font-grotesk)", "sans-serif"],
+      serif: ["var(--font-instrument)", "serif"],
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -42,6 +47,11 @@ const config = {
           "100": "#E4ECFF",
         },
         purple: "#CBACF9",
+        violet: { brand: "#CBACF9", deep: "#8B5CF6" },
+        ground: "#000319",
+        surface: "#0B1028",
+        ink: "#F2F3FA",
+        sub: "#BEC1DD",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
