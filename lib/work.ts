@@ -12,7 +12,7 @@ export type WorkItem = {
   stack: string[]
 }
 
-const d = (slug: string) => `https://digifyr.com/work/${slug}`
+const d = (slug: string) => `/work/${slug}`
 
 export const work: WorkItem[] = [
   {
@@ -75,8 +75,7 @@ export const work: WorkItem[] = [
     blurb:
       "FastAPI + PostgreSQL microservices with WebSocket streaming over Redis/RabbitMQ, predictive-maintenance alerts via Celery (WhatsApp/SMS/email), Keycloak RBAC; Docker on Azure.",
     img: "/projects/mms.png",
-    href: "https://mms-aim.netlify.app",
-    external: true,
+    href: d("mms"),
     featured: true,
     stack: ["FastAPI", "Redis", "RabbitMQ", "Keycloak", "Azure"],
   },
@@ -112,8 +111,7 @@ export const work: WorkItem[] = [
     blurb:
       "RetinaFace + ArcFace pipeline with real-time tracking and logging — Python, TensorFlow/PyTorch, Flask API, React and Flutter clients.",
     img: "/projects/fyp.png",
-    href: "https://github.com/UsmanAsad87/FaceRecogFYPModel",
-    external: true,
+    href: d("facert"),
     ai: true,
     stack: ["PyTorch", "TensorFlow", "Flask"],
   },
@@ -196,6 +194,26 @@ export const work: WorkItem[] = [
     img: "/work/barber-lounge/1.png",
     href: d("barber-lounge"),
     stack: ["Flutter", "Firebase"],
+  },
+  {
+    slug: "opclo",
+    name: "Opclo",
+    tag: "Travel Assistance",
+    headline: "Foursquare-powered discovery, safety alerts and coupons",
+    blurb: "Flutter + .NET + Firebase, shipped to both app stores with a web admin.",
+    img: "/work/opclo/1.png",
+    href: d("opclo"),
+    stack: ["Flutter", ".NET", "Firebase"],
+  },
+  {
+    slug: "ascension",
+    name: "The Ascension App",
+    tag: "Wellness · Community",
+    headline: "A men's self-development community, live on the App Store",
+    blurb: "Habit-building, community and coaching — maintained through v1.4.0.",
+    img: "/work/ascension/1.png",
+    href: d("ascension"),
+    stack: ["Flutter"],
   },
 ]
 

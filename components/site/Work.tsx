@@ -1,10 +1,10 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { featuredWork, moreWork } from "@/lib/work"
 import { Reveal, FadeUp } from "./Reveal"
-import { DIGIFYR } from "./links"
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -19,14 +19,7 @@ export default function Work() {
               <Reveal>Proof, not promises.</Reveal>
             </h2>
           </div>
-          <a
-            href={DIGIFYR}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="label hidden shrink-0 transition-colors hover:text-ink md:block"
-          >
-            full case studies on digifyr.com ↗
-          </a>
+          <p className="label hidden shrink-0 md:block">18 shipped products · full case studies</p>
         </div>
 
         <div className="grid gap-x-7 gap-y-14 md:grid-cols-2">
@@ -39,7 +32,7 @@ export default function Work() {
               transition={{ duration: 0.85, ease, delay: (i % 2) * 0.08 }}
               className={i === 0 ? "md:col-span-2" : ""}
             >
-              <a href={p.href} target="_blank" rel="noopener noreferrer" className="group block">
+              <Link href={p.href} className="group block">
                 <div className="relative overflow-hidden rounded-lg border border-line bg-surface">
                   <Image
                     src={p.img || "/placeholder.svg"}
@@ -57,7 +50,7 @@ export default function Work() {
                     </span>
                   )}
                   <span className="absolute bottom-4 right-4 translate-y-2 rounded-md bg-ink px-3.5 py-2 font-grotesk text-xs font-semibold text-ground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                    View case ↗
+                    View case →
                   </span>
                 </div>
                 <div className="mt-4 flex items-baseline justify-between gap-4">
@@ -67,7 +60,7 @@ export default function Work() {
                   <span className="label shrink-0">{p.tag}</span>
                 </div>
                 <p className="mt-1.5 max-w-xl text-sm leading-relaxed text-sub">{p.headline}</p>
-              </a>
+              </Link>
             </motion.div>
           ))}
         </div>
@@ -76,11 +69,9 @@ export default function Work() {
           <p className="label mb-5">More shipped products</p>
           <div className="border-t border-line">
             {moreWork.map((p) => (
-              <a
+              <Link
                 key={p.slug}
                 href={p.href}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="group grid grid-cols-[1fr_auto] items-center gap-4 border-b border-line py-4 transition-colors duration-300 hover:bg-surface md:grid-cols-[220px_1fr_auto] md:px-4"
               >
                 <span className="font-grotesk text-base font-semibold text-ink transition-colors duration-300 group-hover:text-violet-brand">
@@ -88,7 +79,7 @@ export default function Work() {
                 </span>
                 <span className="hidden truncate text-sm text-sub md:block">{p.headline}</span>
                 <span className="label">{p.tag}</span>
-              </a>
+              </Link>
             ))}
           </div>
         </FadeUp>
