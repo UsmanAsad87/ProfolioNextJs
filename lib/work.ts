@@ -29,14 +29,14 @@ export const work: WorkItem[] = [
     stack: ["FastAPI", "llama.cpp", "Kubernetes", "PostgreSQL RLS"],
   },
   {
-    slug: "homehealth",
-    name: "HomeHealth.ai",
+    slug: "ai-care-platform",
+    name: "AI Care Platform",
     tag: "AI Agents · Healthcare",
     headline: "Three AI agents live in production on a HIPAA healthcare platform",
     blurb:
       "Scheduling, HR and Compliance agents work inside every module on the AWS backend — the Scheduling Agent cut overtime 23% at full coverage. 31 organizations, 913 clinicians.",
-    img: "/work/homehealth/1.png",
-    href: d("homehealth"),
+    img: "/work/ai-care-platform/1.png",
+    href: d("ai-care-platform"),
     ai: true,
     featured: true,
     stack: ["AI Agents", "AWS", "HIPAA", "Next.js"],

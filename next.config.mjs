@@ -1,28 +1,8 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {};
-
-// export default withSentryConfig(nextConfig, {
-
-//     // silent: true,
-//     // org: "javascript-mastery",
-//     // project: "javascript-nextjs",
-//     // }, {
-
-//     // widenClientFileUpload: true,
-
-//     // transpileClientSDK: true,
-
-
-//     // hideSourceMaps: true,
-
-//     // disableLogger: true,
-
-//     // automaticVercelMonitors: true,
-// });
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    /* config options here */
-};
+  async redirects() {
+    return [{ source: "/work/homehealth", destination: "/work/ai-care-platform", permanent: true }]
+  },
+}
 
-export default nextConfig;
+export default nextConfig

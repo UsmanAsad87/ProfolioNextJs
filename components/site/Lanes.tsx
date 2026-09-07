@@ -7,7 +7,7 @@ const lanes = [
     n: "01",
     title: "AI into your product",
     body: "Chat, RAG, agents, vision — added to software you already ship, with evals, cost caps and fallbacks so it survives real users, not just the demo.",
-    proof: "3 agents live on HomeHealth · vision triage on Mechanic Connect",
+    proof: "3 agents live on a healthcare platform · vision triage on Mechanic Connect",
   },
   {
     n: "02",
