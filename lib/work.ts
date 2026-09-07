@@ -71,13 +71,13 @@ export const work: WorkItem[] = [
     slug: "mms",
     name: "MMS — Machine Monitoring",
     tag: "Industrial IoT · Backend",
-    headline: "Real-time machine telemetry for 1,000+ users — API latency cut 20s → 4s",
+    headline: "Real-time machine telemetry for 1,000+ users — API latency cut 10s → 2s",
     blurb:
-      "FastAPI + PostgreSQL microservices with WebSocket streaming over Redis/RabbitMQ, predictive-maintenance alerts via Celery (WhatsApp/SMS/email), Keycloak RBAC; Docker on Azure.",
+      "ASP.NET Core + PostgreSQL microservices with SignalR real-time streaming over Redis/RabbitMQ, predictive-maintenance alerts via Hangfire (WhatsApp/SMS/email), Keycloak RBAC; Docker on Azure.",
     img: "/projects/mms.png",
     href: d("mms"),
     featured: true,
-    stack: ["FastAPI", "Redis", "RabbitMQ", "Keycloak", "Azure"],
+    stack: ["ASP.NET Core", "SignalR", "Redis", "RabbitMQ", "Keycloak", "Azure"],
   },
   {
     slug: "nafapay",

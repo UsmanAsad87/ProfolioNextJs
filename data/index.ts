@@ -226,14 +226,14 @@ export const workExperience = [
   },
   {
     id: 3,
-    title: "Senior Python Developer",
+    title: "Senior .NET Developer",
     company: "Aim Digital, Islamabad",
-    techStack: "Python, FastAPI, PostgreSQL, Redis, RabbitMQ, Celery, Keycloak, Docker, Azure",
+    techStack: ".NET, ASP.NET Core, PostgreSQL, SignalR, Redis, RabbitMQ, Hangfire, Keycloak, Docker, Azure",
     time: "Jun 2025 - Oct 2025",
     desc: [
-      "Designed a scalable FastAPI + PostgreSQL backend for a Machine Monitoring System (MMS) using microservices and Clean Architecture.",
-      "Implemented real-time machine data streaming over WebSockets with Redis and RabbitMQ; predictive maintenance alerts (WhatsApp, SMS, Email) via Celery.",
-      "Secured APIs with Keycloak (JWT / RBAC) for 1,000+ users and optimized API performance from 20s to 4s.",
+      "Designed a scalable ASP.NET Core + PostgreSQL backend for a Machine Monitoring System (MMS) using microservices and Clean Architecture.",
+      "Implemented real-time machine data streaming over SignalR with Redis and RabbitMQ; predictive maintenance alerts (WhatsApp, SMS, Email) via Hangfire.",
+      "Secured APIs with Keycloak (JWT / RBAC) for 1,000+ users and optimized API performance from 10s to 2s.",
       "Containerized with Docker and deployed to Azure App Service & ACR with CI/CD."
     ],
     className: "md:col-span-2",
