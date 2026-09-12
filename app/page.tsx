@@ -1,6 +1,7 @@
 import Nav from "@/components/site/Nav"
 import Hero from "@/components/site/Hero"
 import Ticker from "@/components/site/Ticker"
+import Intro from "@/components/site/Intro"
 import Work from "@/components/site/Work"
 import Lanes from "@/components/site/Lanes"
 import Experience from "@/components/site/Experience"
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Hero />
         <Ticker />
+        <Intro />
         <Work />
         <Lanes />
         <Experience />

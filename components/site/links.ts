@@ -5,3 +5,6 @@ export const DIGIFYR = "https://digifyr.com"
 export const EMAIL = "contact@digifyr.com"
 export const WHATSAPP = `https://wa.me/923194659287?text=${encodeURIComponent("Hi Usman — I'd like to talk about a project.")}`
 export const RESUME = "/cv/Usman-Asad-Resume-AI.pdf"
+
+export const VSL = "https://youtu.be/0LLGcMMinfE"
+export const VSL_EMBED = "https://www.youtube.com/embed/0LLGcMMinfE"
