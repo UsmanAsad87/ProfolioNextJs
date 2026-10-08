@@ -68,6 +68,17 @@ export const work: WorkItem[] = [
     stack: ["Flutter ×3", ".NET", "Vision LLM"],
   },
   {
+    slug: "ble-access-control",
+    name: "BLE Access Control",
+    tag: "BLE Hardware · Mobile Credential",
+    headline: "A phone that opens doors over Bluetooth Low Energy",
+    blurb:
+      "Flutter mobile credential for a BLE relay controller — scan, connect, resolve the GATT characteristic, write two bytes. Native Kotlin and CoreBluetooth clients behind a five-method platform channel; Firestore decides who opens which door.",
+    img: "/work/ble-access-control/1.png",
+    href: d("ble-access-control"),
+    stack: ["Flutter", "CoreBluetooth", "Kotlin BLE", "Firebase"],
+  },
+  {
     slug: "mms",
     name: "MMS — Machine Monitoring",
     tag: "Industrial IoT · Backend",

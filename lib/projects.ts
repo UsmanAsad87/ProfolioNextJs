@@ -145,6 +145,38 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "ble-access-control",
+    name: "BLE Access Control",
+    tag: "BLE Hardware · Mobile Credential",
+    year: "2025–2026",
+    headline: "A phone that opens doors over Bluetooth Low Energy.",
+    summary:
+      "A Flutter mobile credential for a BLE relay controller: scan for the device, connect, resolve the GATT command characteristic and write two bytes to fire the lock. Native BLE clients in Kotlin and Swift sit behind a five-method platform channel, with access managed centrally in Firestore.",
+    problem:
+      "The client sells a relay controller that sits beside a door and switches the lock. It advertises over BLE and accepts short binary commands on a GATT characteristic. They needed a mobile credential — stand at the door, tap, the relay fires — with access managed centrally instead of with key fobs.",
+    solution: [
+      "Flutter UI with Riverpod state; the app never touches Bluetooth directly.",
+      "One platform channel, relay_sdk — configure, connect(timeout), triggerRelay1/2(withResponse), disconnect. That is the entire contract between Dart and native code.",
+      "Native BLE clients on both platforms: android.bluetooth LE in Kotlin, CoreBluetooth in a standalone Swift Package on iOS.",
+      "Discovery by advertised name prefix, with short-UUID suffix matching for firmware whose 128-bit base was not yet fixed.",
+      "Firestore decides who may open which door — single-use activation codes, per-user assignments and schedules, streamed live to the app.",
+    ],
+    outcome:
+      "One Flutter codebase driving the same relay controller from iOS and Android. connect() reports success only once a writable command characteristic is in hand, so a connected result means ready to send, not just link up.",
+    stack: ["Flutter", "Riverpod", "CoreBluetooth", "Kotlin BLE", "Firebase", "Swift Package"],
+    facts: [
+      { label: "Channel surface", value: "5 methods" },
+      { label: "Door command", value: "2 bytes" },
+      { label: "Platforms", value: "iOS + Android" },
+    ],
+    links: [],
+    images: ["/work/ble-access-control/1.png", "/work/ble-access-control/2.png"],
+    captions: [
+      "Assigned doors with access schedules; tap to open",
+      "Architecture — Flutter, platform channel, native BLE clients",
+    ],
+  },
+  {
     slug: "nafapay",
     name: "NafaPay",
     tag: "Fintech · West Africa",
